@@ -1,0 +1,27 @@
+
+#container{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Rokkitt", serif;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4{
+    background-color: rgb(108, 108, 207);
+    color:white;
+    border:solid #D6A800 1px;
+    padding: 10px;
+}
+
+a{
+    color:black;
+    text-decoration:none;
+}
+a:hover{
+    color:blue;
+}
+
+a:visited{
+    color:rgb(154, 41, 41);
+}
