@@ -1,0 +1,73 @@
+
+/* Container */
+#container {
+    width: 100%;
+    font-family:"Rokkitt", serif; ;
+}
+
+/* Center the h1 title */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs */
+.side-by-side {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* h3 font weight */
+h3 {
+    font-weight: 500;
+}
+
+/* List font weight */
+ol,
+ul {
+    font-weight: 300;
+}
+
+/* ORDERED LIST + TITLE styling */
+.side-by-side ol,
+.side-by-side ol + h3 {
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+/* Ordered list styling */
+.side-by-side ol {
+    padding: 10px;
+    list-style-position: inside;
+}
+
+/* UNORDERED LIST + TITLE styling */
+.side-by-side ul,
+.side-by-side ul + h3 {
+    border: 1px dashed red;
+    border-radius: 15px;
+}
+
+/* Unordered list styling */
+.side-by-side ul {
+    padding: 10px;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+/* Bottom div */
+.last-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* Link hover effect */
+.last-div a {
+    text-decoration: none;
+}
+
+.last-div a:hover {
+    text-decoration: underline;
+}
