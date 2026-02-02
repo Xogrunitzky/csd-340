@@ -1,0 +1,48 @@
+
+/* IMAGE GALLERY GRID */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+    gap: 20px;
+}
+
+/* CENTER MAIN TITLE */
+h1 {
+    text-align: center;
+    color: rgba(40, 70, 162, 0.9);
+}
+
+/* CENTER IMAGE TITLES */
+h3 {
+    text-align: center;
+    color: rgba(40, 70, 162, 0.9);
+}
+
+/* CENTER IMAGES */
+figure {
+    text-align: center;
+}
+
+/* FIGCAPTION STYLING */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(40, 70, 162, 0.9);
+}
+
+/* LANDING PAGE LINK */
+.last-div {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.last-div a {
+    text-decoration: none;
+    float: right;
+}
+
+.last-div a:hover {
+    text-decoration: underline;
+}
+
