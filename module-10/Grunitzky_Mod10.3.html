@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<!-- Page title required for the assignment -->
+<title>CSD 340 Web Development with HTML and CSS</title>
+
+<script>
+
+/*
+This function changes the image source when the user interacts with it.
+imageId = the id of the image we want to change
+newImage = the new image file we want to display
+*/
+function changeImage(imageId, newImage){
+    document.getElementById(imageId).src = newImage;
+}
+
+</script>
+
+<style>
+
+/* sets the font */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles all images */
+img{
+    width:250px;
+    margin:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Main heading  -->
+<h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+
+<p>Hover over an image to change it.</p>
+
+<!-- Diamond Section -->
+<h3>Diamond</h3>
+
+<!--
+Image starts as black diamond to white diamond
+-->
+
+<img id="diamond"
+src="img/black_diamond.png"
+onmouseover="changeImage('diamond','img/white_diamond.png')"
+onmouseout="changeImage('diamond','img/black_diamond.png')">
+
+
+<!-- Circle Section -->
+<h3>Circle</h3>
+
+<!--
+Image starts as red circle to blue circle
+-->
+
+<img id="circle"
+src="img/red_circle.png"
+onmouseover="changeImage('circle','img/blue_circle.png')"
+onmouseout="changeImage('circle','img/red_circle.png')">
+
+</body>
+
+</html>
