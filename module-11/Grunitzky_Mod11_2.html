@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Grunitzky_Mod11_2.css">
+
+    <script>
+        //array to store tasks
+        let tasks = [];
+
+        //display function
+        function displayTasks() {
+            let output = "";
+            for (let i = 0; i < tasks.length; i++) {
+                output += (i + 1) + ". " + tasks[i] + "<br>";
+            }
+            document.getElementById("taskList").innerHTML = output;
+        }
+        //add task function
+        function addTask() {
+            let task = document.getElementById("task").value;
+
+            if (task.trim() === "") {
+                alert("Please enter a task before adding.");
+                return;
+            }
+
+            tasks.push(task);
+            alert("Added: " + task);
+
+            document.getElementById("task").value = "";
+            displayTasks();
+        }
+        //sort function
+        function sortTasks() {
+            tasks.sort();
+            alert("Tasks have been sorted.");
+            displayTasks();
+        }
+        //delete last function
+        function deleteLast() {
+            if (tasks.length === 0) {
+                alert("No tasks to delete.");
+                return;
+            }
+
+            let removed = tasks.pop();
+            alert("Deleted: " + removed);
+            displayTasks();
+        }
+    </script>
+</head>
+
+<body>
+    <div id = container>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>Enter a task below, then click "Add" to save it. You can also delete and sort tasks using the buttons.</p>
+
+    <input type="text" id="task" name="task" placeholder="Enter a task"><br>
+
+    <div id="buttons">
+        <button id="addButton" onclick="addTask()">Add</button>
+        <button id="deleteButton" onclick="deleteLast()">Delete Last Entry</button>
+        <button id="sortButton" onclick="sortTasks()">Sort</button>
+    </div>
+
+    <h3>Things To Do:</h3>
+    <div id="taskList"></div>
+    </div>
+</body>
+</html>

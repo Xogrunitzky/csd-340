@@ -1,0 +1,39 @@
+
+body{
+    text-align: center;
+    padding-top: 50px;
+}
+#container{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+     height:400px;
+     width:600px;
+     position: relative;
+    margin-left:30%;
+}
+#task{
+    width:400px;
+    height:40px;
+    padding-left:10px;
+    border-radius: 5px;
+}
+#buttons{
+    padding-top: 10px;
+}
+button{
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    margin-right:15px;
+}
+#addButton{
+    background-color: green;
+}
+
+#deleteButton{
+    background-color: red;
+}
+
+#sortButton{
+   background-color: rgb(20, 26, 217);
+}
